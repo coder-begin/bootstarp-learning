@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择符</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background: #66afe9;
+        }
+
+        .bor {
+
+            background: #2b542c;
+
+        }
+
+        .bor + div {
+            background-color: #0f0f0f;
+
+        }
+        div[class*="a"]{
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="bc bca"></div>
+<div class="bor"></div>
+<div></div>
+</body>
+</html>

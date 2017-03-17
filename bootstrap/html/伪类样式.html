@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类样式</title>
+    <style>
+        /*a:link{*/
+        /*font-weight: 400;*/
+        /*font-size: 20px;*/
+        /*font-family:"楷体";*/
+        /*color: #5cb85c;*/
+        /*}*/
+        /*a:visited{*/
+
+        /*color: #000000;*/
+        /*}*/
+        /*a:hover{*/
+        /*color: #00A1D6;*/
+        /*}*/
+        /*a:not(:first-child){*/
+
+        /*border: 2px dashed black;*/
+        /*}*/
+
+        /*只匹配兄弟元素的第一个选定元素，兄弟元素不只是包含同种元素，也包含别的元素*/
+        a:first-of-type {
+            border: 2px dashed black;
+        }
+
+        /*
+               span:before{
+                   content:"lalalalall" ;
+
+
+               }
+                   span::before{
+
+                       background-color: #ffffff;
+                       color: #008800;
+                       content:"lalalalall" ;
+                       font-size: 20px;
+
+                   }
+                   */
+        span::selection {
+            background-color: #0f0f0f;
+
+        }
+    </style>
+</head>
+<body>
+
+
+<span>sssssssss</span>
+<a href="#">weileiyangshi</a>
+<a href="#">weileiyangshi</a>
+<!--[if IE]>
+<p>你在非IE中将看不到我的身影</p>
+<![endif]-->
+<progress>ss</progress>
+<time>ssss</time>
+<b>sssss</b>
+<i>ssseee</i>
+<strong>sss
+    <ins>ssseeeee</ins>
+    ssss</strong>
+<sub>sssstttt</sub>
+<code>
+    ssss<kbd>sbbbbbb</kbd>sccccc
+</code>
+<a href="http://www.baidu.com" target="_top">sss</a>
+<img src="../../img/icon.jpg" width="200px" height="200px" usemap="#map">
+<map name="map">
+        <area shape="circle" coords="50, 50, 50" href="http://www.baidu.com">
+</map>
+<input type="email" value="yellow">
+
+</body>
+</html>
+<a href="https://cn.wordpress.org/" title="基于WordPress" tabindex="-1">yfunfun</a>

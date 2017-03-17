@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="BOM.js"></script>
+
+</head>
+<body>
+<form>
+    <input type="text" name="text1" value="1111">
+    <!--<button id="btn" onclick="alert('ssss')">sss</button>-->
+    <input type="button" value="ssss" id="btn">
+</form>
+<script>
+   /*
+    document.getElementById("btn").onclick = function () {
+        //这样的事件处理会阻塞在元素中直接添加事件处理
+        location.href = "http://www.baidu.com";
+        alert(this.value);
+    }
+    */
+
+   var btn=document.getElementById("btn");
+        delEvent.addEvent(btn,"click",function(){alert(this.value)});
+
+    //    alert(getNavigatorInfo.hasPlugin("Flash"));
+    //alert(document.getElementById("btn").innerText);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tranform</title>
+    <style>
+        .container{
+            width: 800px;
+                height: 600px;
+            border: 1px dashed black;
+            margin: 0;
+            padding:0;
+
+        }
+        .test{
+            width: 200px ;
+            height:100px;
+            border: 4px solid black;
+        }
+        .change{
+
+            -webkit-transform:translate(500px,400px) scale(0.5) skew(10deg,10deg);
+            /*
+                旋转变换
+               -webkit-transform:rotate(50deg);
+                移动变换
+                -webkit-transform:translate(500px,400px)
+                缩放变换
+                 -webkit-transform:scale(2)
+                 扭曲变换:与横纵水平线的夹角就是扭曲的度数
+                  -webkit-transform:skew(10deg,10deg)
+            */
+
+
+
+        }
+        @media screen and (min-resolution:97dpi) {
+            body{
+                background-color: #0f0f0f;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="test change"></div>
+
+</div>
+
+
+</body>
+</html>

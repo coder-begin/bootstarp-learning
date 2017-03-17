@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="兼容代码/BOM.js"></script>
+</head>
+<body>
+<ul id="my_ul">
+    <button id="btn">
+        5555
+    </button>
+
+</ul>
+<textarea id="textarea">
+    ssssssssssssssssss
+
+</textarea>
+
+<script>
+    //正则表达式
+    //g:对全局匹配
+    //i:大小写不敏感
+    //m:多行匹配
+    //查找在方括号内的字符
+    var reg = /[123]/gim;
+    //查找不再方括号内的字符
+    var reg1 = /[^123]/gim;
+    //查找3-5
+    var reg2 = /[3-5]/gim;
+    //查找a-h,或者A-H或者A-h,就是不能查找a-H
+    var reg3 = /[a-h]/g;
+    var reg4 = /[A-h]/g;//表示A-Z加上a-h
+    var reg5 = /[A-H]/g;
+    //    var reg5=/[a-H]/g;不允许
+    //匹配指定字符
+    var reg6 = /(red|blue)/g;
+    //匹配以a开头以b结尾，中间是随便两个字符
+    var reg7 = /a..b/g;//".."表示任意字符，除了换行和行结束符
+    //匹配单词字符，就是a-z,A-Z,数字，凡是特殊字符都不是
+    var reg8 = /\w/g;
+    //匹配非单词字符，就是特殊字符
+    var reg9 = /\W/g;
+    //匹配数字
+    var reg10 = /\d/g;
+    //匹配非数字
+    var reg11 = /\D/g;
+    //匹配空白字符
+    var reg12 = /\s/g;
+    //匹配非空白字符
+    var reg13 = /\S/g;
+    //匹配单词边界,单词边界就是任意特殊字符
+    var reg14 = /\b12/g;//表示12的左边是一个特殊字符，空格也算特殊字符
+    //匹配换行字符
+    var reg15 = /\n/g;
+    //匹配1个以上的某个字符
+    var reg16 = /1+/g;//匹配1个1或者两个，三个。。。1
+    //匹配0个或者多个某个字符
+    var reg17 = /a1*/g;//匹配a后面有0个或者多个1，如果有1就把所有1匹配出来，如果没有就只是匹配a
+    //匹配0个或者1个某个字符
+    var reg18 = /a1?/g;//匹配a后面有0个或者1个1，如果有1就把这个1一起匹配出来，如果没有就只是匹配a
+    //匹配连续的某个字符
+    var reg19 = /a{2}/g;//连续的2个a
+    var reg20 = /a{2,3}/g;//连续的2个或者3个a
+    var reg21 = /a{2,}/g;//连续的至少2个a
+    //匹配以某个字符结尾
+    var reg22 = /a$/;//匹配是否以a结尾
+    //匹配以某个字符开头
+    var reg23 = /^a/g;//匹配是否以a结尾
+    //匹配紧跟者某个字符后面的是某个字符
+    var reg24 = /a(?=1)/g;//紧跟者a后面是1的字符
+    //匹配紧跟者某个字符后面的不是某个字符
+    var reg25 = /a(?=1)/g;//紧跟者a后面不是1的字符
+
+    var num = "1595&&&s7352";
+    var str = "anBcnSnOneoAoc";
+    var str1 = "a1ABCaa a2bGaaHabcdefghaaaa8aaaIMNZPa1";
+    var str2 = "redblue1651616";
+    var str3 = "1316511a11122a1as  \nsAAA!@ii&*PP-+=ii";
+    //    alert(num.match(reg));
+    //    alert(num.match(reg1));
+    //        alert(num.match(reg2));
+    //            alert(str.match(reg3));
+    //            alert(str1.match(reg4));
+    //            alert(str.match(reg5));
+    //    alert(str2.match(reg6));
+    //    alert(str1.match(reg7));
+    //        alert(str3.match(reg8));
+    //        alert(str3.match(reg9));
+    //    alert(str3.match(reg10));
+    //    alert(str3.match(reg11));
+    //    alert(str1.match(reg12));
+    //    alert(str1.match(reg13));
+    //    alert(str1.match(reg14));
+    //    alert(reg15.test(str3));
+    //    alert(str3.match(reg16));
+    //    alert(str3.match(reg17));
+    //    alert(str3.match(reg18));
+    //    alert(str1.match(reg19));
+    //    alert(str1.match(reg20));
+    //    alert(str1.match(reg21));
+    //    alert(str1.match(reg22));
+    //    alert(str1.match(reg23));
+    //    alert(str1.match(reg24));
+    //    alert(str1.match(reg25));
+
+    //匹配邮箱
+    //    var regMail=/.+@.+\.com/gi;
+    //    var str="12@qq.com";
+    //    alert(regMail.test(str));
+    //    elem=document.getElementById("btn");
+    //        alert(typeof elem);
+    //   document.write("<script src='test.js'>"+"<\/script>");
+    document.getElementById("textarea").addEventListener("select",showMessage,false);
+
+            function showMessage() {
+
+                alert(getSelected(this));
+
+            }
+</script>
+
+
+</body>
+</html>

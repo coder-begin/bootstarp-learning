@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        .donghua{
+            width: 200px;
+            height: 100px;
+            -webkit-animation-name: donghua;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-iteration-count: 10;
+
+            -webkit-animation-timing-function: linear;
+            background-color: #0f0f0f;
+            -webkit-animation-fill-mode:both ;
+
+
+        }
+        .donghua:hover{
+            -webkit-animation-play-state: paused;
+
+        }
+        @-webkit-keyframes donghua {
+                    0%{-webkit-transform: translate(50px,50px)}
+                     10%{-webkit-transform: translate(60px,50px)}
+            20%{-webkit-transform: translate(70px,50px)}
+            30%{-webkit-transform: translate(80px,50px)}
+            40%{-webkit-transform: translate(90px,50px)}
+            50%{-webkit-transform: translate(80px,50px)}
+            60%{-webkit-transform: translate(70px,50px)}
+            70%{-webkit-transform: translate(60px,50px)}
+            80%{-webkit-transform: translate(50px,50px)}
+            90%{-webkit-transform: translate(40px,50px)}
+            100%{-webkit-transform: translate(30px,50px)}
+        }
+
+
+    </style>
+</head>
+<body>
+
+        <div class="donghua"></div>
+
+
+</body>
+</html>

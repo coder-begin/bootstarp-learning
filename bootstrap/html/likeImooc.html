@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>imooc</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css">
+    <script src="../../jquery-3.1.1.js"></script>
+    <style>
+        .position-brand {
+            margin-top: -10px;
+        }
+
+        .position-link {
+            margin-top: 14px;
+
+        }
+
+        .position-link a {
+            margin-left: 4%;
+        }
+
+        .position-link a:first-child {
+            margin-left: 15%;
+
+        }
+
+        .position-form {
+            margin-top: -25px;
+            margin-left: 50%;
+        }
+        .position-nabar-right{
+
+            margin-top: -30px;
+        }
+        .position-nabar-right button{
+            margin: 7px;
+        }
+        .position-carouel-pre{
+
+            margin-left: 20%;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand " href="http://www.yfunfun.com.cn">
+                    <img src="../../img/blackcar.png" width="50px" height="50px" class="img-circle position-brand">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse ">
+                <div class="position-link">
+                    <a class="navbar-link">课程</a>
+                    <a class="navbar-link">实战</a>
+                    <a class="navbar-link">手记</a>
+                    <a class="navbar-link">职业路线</a>
+                </div>
+                <form class="navbar-form  navbar-left position-form">
+                    <div class="input-group">
+                        <input class="form-control" placeholder="search" type="text">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+                    </div>
+                </form>
+                <div class="navbar-right position-nabar-right">
+                    <button class="btn btn-sm btn-default">购物车</button>
+                    <button class="btn btn-sm btn-default">资料</button>
+                    <button class="btn btn-sm btn-default">检查</button>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+
+</div>
+
+
+<div class="container">
+    <div class="btn-group-vertical" style="position: absolute">
+        <button class="btn btn-success btn-lg">ssssss</button>
+        <button class="btn btn-default">ssssss</button>
+        <button class="btn btn-default">ssssss</button>
+        <button class="btn btn-default">ssssss</button>
+        <button class="btn btn-default">ssssss</button>
+        <button class="btn btn-default">ssssss</button>
+    </div>
+    <div class="carousel slide" id="carousel-header" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel-header" data-slide-to="0"></li>
+            <li class="active" data-target="#carousel-header" data-slide-to="1"></li>
+            <li class="active" data-target="#carousel-header" data-slide-to="2"></li>
+
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" >
+                <img src="../../img/erwei.png">
+
+            </div>
+            <div class="item " >
+                <img src="../../img/erwei.png">
+
+            </div>
+            <div class="item " >
+                <img src="../../img/erwei.png">
+
+            </div>
+            <a class="left carousel-control position-carouel-pre" href="#carousel-header" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-header" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+<script>
+
+
+    document.querySelectorAll(".btn-group-vertical button")[0].cancelable=true
+
+
+</script>
+
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

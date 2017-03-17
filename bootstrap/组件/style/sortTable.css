@@ -1,0 +1,45 @@
+.container{
+
+    width: 500px;
+    height: 500px;
+    position: relative;
+
+
+}
+#score-table{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-y: hidden;
+    font-size: 15px;
+    text-align: center;
+    border-collapse: collapse;
+
+
+}
+#score-table thead{
+    float: left;
+
+
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+#score-table thead a{
+    position: absolute;
+    left: 90px;
+    text-decoration: none;
+}
+
+#score-table tbody{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    position: absolute;
+}
+
+#score-table td{
+    position: relative;
+    width: 120px;
+    height: 30px;
+    border: 2px solid #3C8B7E;
+}
